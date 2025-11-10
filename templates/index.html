@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Depression Detection via fMRI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Upload an fMRI file</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".nii,.nii.gz" required /><br /><br />
+        <input type="submit" value="Predict" />
+    </form>
+    {% if prediction %}
+    <h3>Prediction: {{ prediction }}</h3>
+{% endif %}
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+
+</body>
+</html>
