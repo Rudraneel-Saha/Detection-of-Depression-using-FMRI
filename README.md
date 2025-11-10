@@ -39,7 +39,7 @@ Installation
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/Rudraneel-Saha/Detection-of-Depression-using-FMRI
 cd your-repo
 Install dependencies (preferably in a virtual environment):
 
